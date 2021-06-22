@@ -4,6 +4,10 @@ import FlashcardList from "./FlashcardList";
 const FlashcardContainer = () => {
 const [flashcards, setFlashcards] = useState(placeholderCards)
 
+useEffect(() => {
+  // fetch to quiz api to set state of flashcards array
+}, []);
+
   return (
   <div>
   <FlashcardList flashcards={flashcards}/>
